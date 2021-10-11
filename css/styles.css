@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%;
+  position: relative; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px; }
+
+.app {
+  min-height: calc(100vh - 120px); }
+
+nav {
+  height: 60px;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+  nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    nav .logo__img {
+      height: 50px;
+      width: 50px;
+      background-image: url(../images/Diamond-Free-Download-PNG.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    nav .logo h1 {
+      margin: 0;
+      font-weight: bold; }
+  nav .links {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    nav .links a {
+      font-family: sans-serif;
+      text-decoration: none;
+      color: black; }
+  nav .fa-bars {
+    display: none; }
+
+.mobile-links {
+  background-color: pink;
+  width: 100%;
+  height: 200px;
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column; }
+  .mobile-links a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black; }
+
+@media only screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 3px solid black; }
+    nav .logo h1 {
+      font-size: 15px; }
+    nav .links {
+      display: none; }
+    nav .fa-bars {
+      display: block;
+      font-size: 30px;
+      float: right; } }
+
+footer {
+  background-color: pink;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px; }
+  footer .copy {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+
+.socials {
+  width: 150px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+  .socials__img {
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .socials .twitter {
+    background-image: url(../images/twitter.png); }
+  .socials .fb {
+    background-image: url(../images/facebook.png); }
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 30px 15px;
+    flex-direction: column;
+    justify-content: center; }
+    footer .copy {
+      flex-direction: column; } }
+
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .home .topText,
+  .home .bottomText {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px; }
+  .home .banner {
+    margin-top: 30px;
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px; }
+  .home .sides {
+    display: flex; }
+    .home .sides .side {
+      width: 50%; }
+      .home .sides .side button {
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer; }
+
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .about .top {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px; }
+  .about .people {
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly; }
+    .about .people .box {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0; }
+      .about .people .box .female-one {
+        background-image: url(../images/female-one.jpg); }
+      .about .people .box .female-two {
+        background-image: url(../images/female-face-two.jpg); }
+      .about .people .box .male-one {
+        background-image: url(../images/male-face.jpg); }
+      .about .people .box .imageBox {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 200px;
+        height: 200px;
+        border: 3px solid pink; }
+      .about .people .box p {
+        margin-top: 20px; }
+
+@media only screen and (max-width: 768px) {
+  .about .people {
+    flex-direction: column; }
+    .about .people .box {
+      width: 80%;
+      margin: 0 auto; } }
+
+.products {
+  padding-bottom: 40px; }
+  .products .set {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px; }
+    .products .set .gallery {
+      margin: 5px;
+      width: 500px; }
+
+@media only screen and (max-width: 768px) {
+  .products .set {
+    margin: 0 auto; }
+    .products .set .gallery {
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .products .set .gallery img {
+        height: 200px;
+        width: 200px; } }
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .contact .top,
+  .contact .bottom {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px; }
+  .contact form {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    .contact form input,
+    .contact form textarea {
+      background-color: pink;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin: 10px 0; }
+    .contact form button {
+      border: 2px pink solid;
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 10px 20px;
+      width: 200px;
+      margin: 0 auto; }

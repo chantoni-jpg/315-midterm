@@ -1,0 +1,32 @@
+.products {
+  padding-bottom: 40px;
+  .set {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    .gallery {
+      margin: 5px;
+      width: 500px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .products {
+    .set {
+      margin: 0 auto;
+      .gallery {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        img {
+          height: 200px;
+          width: 200px;
+        }
+      }
+    }
+  }
+}
